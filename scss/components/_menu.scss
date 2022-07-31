@@ -79,8 +79,14 @@
         position: absolute;
         right: 15px;
         top: 15px;
+        background-color: transparent;
+        cursor: pointer;
+        border: transparent;
 
 }
+    .header-mobile__close:hover  {
+        color: #2196f3;
+    }
     .mobile-menu__link {
         font-weight: 500;
         font-size: 40px;
@@ -126,8 +132,8 @@
         top: 50%;    
         left: 50%;
         transform: translate(-50%, -50%);
-        width:480px;
-        height: 796px;
+      /*  width:480px;
+        height: 796px;*/
         background-color: var(--logo-white);
         padding-top: 48px;
         padding-left: 40px;

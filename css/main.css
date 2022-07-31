@@ -298,6 +298,13 @@ address {
   position: absolute;
   right: 15px;
   top: 15px;
+  background-color: transparent;
+  cursor: pointer;
+  border: transparent;
+}
+
+.header-mobile__close:hover {
+  color: #2196f3;
 }
 
 .mobile-menu__link {
@@ -348,8 +355,8 @@ address {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 480px;
-  height: 796px;
+  /*  width:480px;
+    height: 796px;*/
   background-color: var(--logo-white);
   padding-top: 48px;
   padding-left: 40px;
@@ -1230,13 +1237,17 @@ address {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
   background-color: var(--logo-white);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
+}
+@media screen and (min-width: 767px) {
+  .backdrop-modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .backdrop-modal__title { /*modal-title*/
