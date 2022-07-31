@@ -6,7 +6,11 @@
     letter-spacing: 0.03em;
     text-decoration: none;
     margin-right: 93px;
-        
+       
+    @media screen and (max-width: 1199px) {
+
+        font-size: 24px;
+    }
 }
 
 .logo-blue {
