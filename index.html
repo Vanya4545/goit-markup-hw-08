@@ -39,14 +39,16 @@
       <ul class="heder__desktop-contacts header-contacts">
           <li class="header-contacts__list"> 
             <a href="mailto:info@devstudio.com" class="header-contacts__link">
-            <svg class="header-contacts__icon" aria-hidden="true" width="16" height="12">
-            <use href="./images/symbol-defs.svg#icon-envelope"></use>
-          </svg>
+    
+    
+    <svg class="header-contacts__icon tablet-envelope__icon" aria-hidden="true" width="16" height="12" media="(min-width: 1199px)">
+      <use href="./images/symbol-defs.svg#icon-envelope"></use>
+    </svg>        
           info@devstudio.com  </a> 
         </li>
           <li class="header-contacts__list"> 
-            <a href="tel:+380961111111" class="header-contacts__link">
-            <svg class="header-contacts__icon" aria-hidden="true" width="10" height="16">
+            <a href="tel:+380961111111" class="header-contacts__link ">
+            <svg class="header-contacts__icon tablet-smartfone__icon" aria-hidden="true" width="10" height="16">
             <use href="./images/symbol-defs.svg#icon-smartphone"></use>
           </svg>
           +38 096 111 11 11</a> 
@@ -55,37 +57,41 @@
     </div>
 
     <button class="header-open__menu" type="button" data-menu-open> 
-      <img 
-                   
-                   src="./images/menu.svg" 
-                   alt="відкриття меню" >
+      <svg class="" aria-hidden="true" width="40" height="40">
+        <use href="./images/icons/mobilemenu.svg#icon-openmobilemenu"></use>
+      </svg>
+
        </button>
-   <div class="header__mobile-menu mobile-menu is-hidden" data-menu>
+        <div class="backdrop-mobile">
+   <div class="header__mobile-menu mobile-menu is-open" data-menu>
     <nav>
       <button class="header-close__menu" type="button" data-menu-close> 
-        <img class="header-mobile__close"
-                   
-        src="./images/close.svg" 
-        alt="кнопка закриття" > </button>
+        <svg class="header-close__icon" aria-hidden="true" width="40" height="40">
+          <use href="./images/icons/mobilemenu.svg#icon-closemobilemenu"></use>
+        </svg>
+            </button>
      
 <ul class="mobile-menu__list">
 <li> <a href="./index.html" class="mobile-menu__link current">Студія</a></li>
-<li> <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a></li>
+<li> <a href="./portfolio.html" class="mobile-menu__link ">Портфоліо</a></li>
 <li> <a href="#" class="mobile-menu__link">Контакти</a></li>
+</ul>
+<ul class="mobile-menu__adress">
 <li> <a href="tel:+380961111111" class="mobile-menu__link-tel current">+38 096 111 11 11</a></li>
 <li> <a href="mailto:info@devstudio.com" class="mobile-menu__link-mail">info@devstudio.com</a></li>
-
-
 </ul>
+
 <ul class="mobile-menu__social">
   <li><a href="#" class="mobile-menu__social-link">Instagram</a></li> 
     <li><a href="#" class="mobile-menu__social-link">Twitter</a></li> 
     <li><a href="#" class="mobile-menu__social-link">Facebook</a></li> 
     <li><a href="#" class="mobile-menu__social-link">LinkedIn</a></li> 
   </ul>
-       
+
+   
 
     </nav>
+    </div>
    </div>
                
    </header>
@@ -158,8 +164,6 @@
           </div>
       
     </div>
-
-
 
       </div>
          
@@ -238,10 +242,21 @@
         <h2 class="team-section__title">Наша команда</h2>
         <ul class="team-section__list">
                  <li class="team-section__image"> 
-                  <img 
-                      srcset="./images/img1@2x.jpg 2x"
-                      src="./images/img1.jpg" 
-                      alt="Игорь Демьяненко Дизайнер" width="270" height="260">
+                  <picture>
+                    <source srcset="./images/1mobile450.jpg, ./images/1mobile450@2x.jpg 2x" 
+                    media="(max-width: 767px)" >
+
+                  <source srcset="./images/1tablet354.jpg, ./images/1tablet354@2x.jpg 2x" 
+                  media="(min-width: 768px) and (max-width: 1199px)">
+
+                  <source srcset="./images/1desctop270.jpg, ./images/1desctop270@2x.jpg 2x"
+                    media="(min-width: 1199px)">
+
+
+                  <img                      
+                      src="./images/1mobile450.jpg" 
+                      alt="Игорь Демьяненко Дизайнер" >
+                  </picture>
                        
                   <div class="team-card">
 
@@ -275,11 +290,19 @@
                       </div>
                  </li>
                  <li class="team-section__image"> 
-                  <img 
-                  srcset="./images/img2@2x.jpg 2x"
-                  src="./images/img2.jpg" 
-                  alt="Ольга Репина Разработчик" width="270" height="260">
-
+                  <picture>
+                    <source srcset="./images/2mobile450.jpg, ./images/2mobile450@2x.jpg 2x"
+                     media="(max-width: 767px)">
+                  
+                    <source srcset="./images/2tablet354.jpg, ./images/2tablet354@2x.jpg 2x"
+                      media="(min-width: 768px) and (max-width: 1199px)">
+                  
+                    <source srcset="./images/2desctop270.jpg, ./images/2desctop270@2x.jpg 2x" 
+                    media="(min-width: 1199px)">
+                  
+                  
+                    <img src="./images/2mobile450.jpg" alt="Ольга Репина">
+                  </picture>
                       <div class="team-card">
 
                         <h3 class="team-card__name"> Ольга Репина</h3>
@@ -315,10 +338,19 @@
                     </div>
                  </li>
                 <li class="team-section__image"> 
-                  <img 
-                  srcset="./images/img3@2x.jpg 2x"
-                  src="./images/img3.jpg" 
-                  alt="Николай Тарасов Маркетолог" width="270" height="260">
+                <picture>
+                  <source srcset="./images/3mobile450.jpg, ./images/3mobile450@2x.jpg 2x"
+                   media="(max-width: 767px)">
+                
+                  <source srcset="./images/3tablet354.jpg, ./images/3tablet354@2x.jpg 2x"
+                    media="(min-width: 768px) and (max-width: 1199px)">
+                
+                  <source srcset="./images/3desctop270.jpg, ./images/3desctop270@2x.jpg 2x"
+                   media="(min-width: 1199px)">
+                
+                
+                  <img src="./images/3mobile450.jpg" alt="Николай Тарасов">
+                </picture>
 
                       <div class="team-card">
 
@@ -355,11 +387,19 @@
                     </div>
                   </li>
                  <li class="team-section__image">
-                   <img 
-                   srcset="./images/img4@2x.jpg 2x"
-                   src="./images/img4.jpg" 
-                   alt="Михаил Ермаков Дизайнер пользовательского интерфейса" width="270" height="260">
+                  <picture>
+                    <source srcset="./images/4mobile450.jpg, ./images/4mobile450@2x.jpg 2x" 
+                    media="(max-width: 767px)">
                     
+                    <source srcset="./images/4tablet354.jpg, ./images/4tablet354@2x.jpg 2x"
+                      media="(min-width: 768px) and (max-width: 1199px)">
+                    
+                    <source srcset="./images/4desctop270.jpg, ./images/4desctop270@2x.jpg 2x" 
+                    media="(min-width: 1199px)">
+                    
+                    
+                    <img src="./images/4mobile450.jpg" alt="Михаил Ермаков">
+                    </picture>
                    <div class="team-card">
 
                       <h3 class="team-card__name"> Михаил Ермаков</h3>

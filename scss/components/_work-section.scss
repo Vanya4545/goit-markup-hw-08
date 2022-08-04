@@ -1,8 +1,13 @@
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
         .work-section {
         display: none;
     }
+}
+    @media screen and (min-width: 1200px) {
+             .work-section {
+                padding-top: 0;
+             }
 }
 
 .work-section__title {
@@ -41,4 +46,6 @@ margin-top: 50px;
     text-transform: uppercase;
     color: var(--logo-white);
     z-index: 10;
+
 }
+    

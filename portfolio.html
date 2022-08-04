@@ -36,19 +36,55 @@
               <ul class="heder__desktop-contacts header-contacts">
                 <li class="header-contacts__list"> 
                   <a href="mailto:info@devstudio.com" class="header-contacts__link">
-                  <svg class="header-contacts__icon" aria-hidden="true" width="16" height="12">
+                  <svg class="header-contacts__icon tablet-envelope__icon" aria-hidden="true" width="16" height="12">
                   <use href="./images/symbol-defs.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com  </a> 
               </li>
                 <li class="header-contacts__list"> 
                   <a href="tel:+380961111111" class="header-contacts__link">
-                  <svg class="header-contacts__icon" aria-hidden="true" width="10" height="16">
+                  <svg class="header-contacts__icon tablet-smartfone__icon" aria-hidden="true" width="10" height="16">
                   <use href="./images/symbol-defs.svg#icon-smartphone"></use>
                 </svg>
                 +38 096 111 11 11</a> 
               </li>
             </ul>
+        </div>
+        <button class="header-open__menu" type="button" data-menu-open>
+            <svg class="" aria-hidden="true" width="40" height="40">
+                <use href="./images/icons/mobilemenu.svg#icon-openmobilemenu"></use>
+            </svg>
+        
+        </button>
+        <div class="backdrop-mobile">
+            <div class="header__mobile-menu mobile-menu is-open" data-menu>
+                <nav>
+                    <button class="header-close__menu" type="button" data-menu-close>
+                        <svg class="header-close__icon" aria-hidden="true" width="40" height="40">
+                            <use href="./images/icons/mobilemenu.svg#icon-closemobilemenu"></use>
+                        </svg>
+                       
+                    </button>
+        
+                    <ul class="mobile-menu__list">
+                        <li> <a href="./index.html" class="mobile-menu__link current">Студія</a></li>
+                        <li> <a href="./portfolio.html" class="mobile-menu__link ">Портфоліо</a></li>
+                        <li> <a href="#" class="mobile-menu__link">Контакти</a></li>
+                    </ul>
+                    <ul class="mobile-menu__adress">
+                        <li> <a href="tel:+380961111111" class="mobile-menu__link-tel current">+38 096 111 11 11</a></li>
+                        <li> <a href="mailto:info@devstudio.com" class="mobile-menu__link-mail">info@devstudio.com</a></li>
+                    </ul>
+        
+                    <ul class="mobile-menu__social">
+                        <li><a href="#" class="mobile-menu__social-link">Instagram</a></li>
+                        <li><a href="#" class="mobile-menu__social-link">Twitter</a></li>
+                        <li><a href="#" class="mobile-menu__social-link">Facebook</a></li>
+                        <li><a href="#" class="mobile-menu__social-link">LinkedIn</a></li>
+                    </ul>            
+        
+                </nav>
+            </div>
         </div>
     
     </header>
@@ -75,10 +111,19 @@
                             <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                 вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
-                            <img 
-                            srcset="./images/card1@2x.jpg 2x"
-                            src="./images/card1.jpg" 
-                            alt="Изображение открытого ноутбука" width="370">
+                            <picture>
+                                <source srcset="./images/1cardmobile450.jpg, ./images/1cardmobile450@2x.jpg 2x" 
+                                media="(max-width: 767px)">
+                            
+                                <source srcset="./images/1cardtablet354.jpg, ./images/1cardtablet354@2x.jpg 2x"
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="./images/1carddesctop370.jpg, ./images/1carddesctop370@2x.jpg 2x" 
+                                media="(min-width: 1199px)">
+                            <img                             
+                            src="./images/1carddesctop370.jpg" 
+                            alt="Изображение открытого ноутбука">
+                            </picture>
                             </div> 
                                     <div class="flat-item">
                                     <h3 class="flat-item__title">Технокряк</h3>
@@ -90,10 +135,18 @@
                                 <div class="flat-image__overlay">
                                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p></div>
+                        <picture>
+                            <source srcset="./images/2cardmobile450.jpg, ./images/2cardmobile450@2x.jpg 2x" media="(max-width: 767px)">
+                        
+                            <source srcset="./images/2cardtablet354.jpg, ./images/2cardtablet354@2x.jpg 2x"
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                        
+                            <source srcset="./images/2carddesctop370.jpg, ./images/2carddesctop370@2x.jpg 2x" media="(min-width: 1199px)">
                             <img 
-                            srcset="./images/card2@2x.jpg 2x"
-                            src="./images/card2.jpg" 
-                            alt="Постер ребята играют в баскетбол" width="370">
+                             src="./images/2carddesctop370.jpg"
+                            alt="Постер ребята играют в баскетбол">
+                            </picture>
+
                             </div>
                             <div class="flat-item">
                                 <h3 class="flat-item__title">Постер New Orlean vs Golden Star</h3>
@@ -107,10 +160,18 @@
                                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
-                            <img 
-                            srcset="./images/card3@2x.jpg 2x"
-                            src="./images/card3.jpg" 
-                            alt="Изображение логотипа ресторана" width="370">
+                            <picture>
+                                <source srcset="./images/3cardmobile450.jpg, ./images/3cardmobile450@2x.jpg 2x"
+                                 media="(max-width: 767px)">
+                            
+                                <source srcset="./images/3cardtablet354.jpg, ./images/3cardtablet354@2x.jpg 2x"
+                                    media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="./images/3carddesctop370.jpg, ./images/3carddesctop370@2x.jpg 2x"
+                                 media="(min-width: 1199px)">
+                                <img src="./images/3carddesctop370.jpg"
+                            alt="Изображение логотипа ресторана">
+                             </picture>
                             </div>
                             <div class="flat-item">
                                 <h3 class="flat-item__title">Ресторан Seafood</h3>
@@ -123,10 +184,18 @@
                                         <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
                                     </div>
-                                <img 
-                                srcset="./images/card4@2x.jpg 2x"
-                                src="./images/card4.jpg" 
-                                alt="Наушники" width="370">
+                                    <picture>
+                                        <source srcset="./images/4cardmobile450.jpg, ./images/4cardmobile450@2x.jpg 2x"
+                                         media="(max-width: 767px)">
+                                    
+                                        <source srcset="./images/4cardtablet354.jpg, ./images/4cardtablet354@2x.jpg 2x"
+                                        media="(min-width: 768px) and (max-width: 1199px)">
+                                    
+                                        <source srcset="./images/4carddesctop370.jpg, ./images/4carddesctop370@2x.jpg 2x"
+                                         media="(min-width: 1199px)">
+                                        <img src="./images/4carddesctop370.jpg"
+                                             alt="Наушники">
+                                </picture>
                                 </div>
                                <div class="flat-item">
                                 <h3 class="flat-item__title">Проєкт Prime</h3>
@@ -139,10 +208,18 @@
                                         <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
                                     </div>
-                                <img 
-                                srcset="./images/card5@2x.jpg 2x"
-                                src="./images/card5.jpg" 
-                                alt="Две коробки" width="370">
+                                <picture>
+                                    <source srcset="./images/5cardmobile450.jpg, ./images/5cardmobile450@2x.jpg 2x"
+                                     media="(max-width: 767px)">
+                                
+                                    <source srcset="./images/5cardtablet354.jpg, ./images/5cardtablet354@2x.jpg 2x"
+                                    media="(min-width: 768px) and (max-width: 1199px)">
+                                
+                                    <source srcset="./images/5carddesctop370.jpg, ./images/5carddesctop370@2x.jpg 2x"
+                                     media="(min-width: 1199px)">
+                                    <img src="./images/5carddesctop370.jpg"
+                                alt="Две коробки">
+                                </picture>
                                 </div>
                                 <div class="flat-item">
                                     <h3 class="flat-item__title">Проєкт Boxes</h3>
@@ -155,10 +232,18 @@
                                         <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
                                     </div>
-                                <img 
-                                srcset="./images/card6@2x.jpg 2x"
-                                src="./images/card6.jpg" 
-                                alt="Монитор" width="370">
+                                <picture>
+                                    <source srcset="./images/6cardmobile450.jpg, ./images/6cardmobile450@2x.jpg 2x"
+                                     media="(max-width: 767px)">
+                                
+                                    <source srcset="./images/6cardtablet354.jpg, ./images/6cardtablet354@2x.jpg 2x"
+                                    media="(min-width: 768px) and (max-width: 1199px)">
+                                
+                                    <source srcset="./images/6carddesctop370.jpg, ./images/6carddesctop370@2x.jpg 2x"
+                                     media="(min-width: 1199px)">
+                                    <img src="./images/6carddesctop370.jpg"
+                                         alt="Монитор" >
+                                </picture>
                                 </div>
                                 <div class="flat-item">
                                     <h3 class="flat-item__title">Inspiration has no Borders</h3>
@@ -171,10 +256,18 @@
                                         <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
                                     </div>
-                                <img 
-                                srcset="./images/card7@2x.jpg 2x"
-                                src="./images/card7.jpg" 
-                                alt="Открытая книга" width="370">
+                            <picture>
+                                <source srcset="./images/7cardmobile450.jpg, ./images/7cardmobile450@2x.jpg 2x"
+                                 media="(max-width: 767px)">
+                            
+                                <source srcset="./images/7cardtablet354.jpg, ./images/7cardtablet354@2x.jpg 2x"
+                                    media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="./images/7carddesctop370.jpg, ./images/7carddesctop370@2x.jpg 2x"
+                                 media="(min-width: 1199px)">
+                                <img src="./images/7carddesctop370.jpg"
+                                alt="Открытая книга">
+                                </picture>
                                 </div>
                                 <div class="flat-item">
                                     <h3 class="flat-item__title">Видання Limited Edition</h3>
@@ -187,10 +280,16 @@
                                         <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
                                     </div>
-                                <img 
-                                srcset="./images/card8@2x.jpg 2x"
-                                src="./images/card8.jpg" 
-                                alt="Бирка Лаб ель таг" width="370">
+                                <picture>
+                                    <source srcset="./images/8cardmobile450.jpg, ./images/8cardmobile450@2x.jpg 2x" media="(max-width: 767px)">
+                                
+                                    <source srcset="./images/8cardtablet354.jpg, ./images/8cardtablet354@2x.jpg 2x"
+                                        media="(min-width: 768px) and (max-width: 1199px)">
+                                
+                                    <source srcset="./images/8carddesctop370.jpg, ./images/8carddesctop370@2x.jpg 2x" media="(min-width: 1199px)">
+                                    <img src="./images/8carddesctop370.jpg"
+                                alt="Бирка Лаб ель таг">
+                                   </picture>
                                 </div>
                                 <div class="flat-item">
                                     <h3 class="flat-item__title">Проект LAB</h3>
@@ -203,10 +302,16 @@
                                         <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
                                     </div>
-                                <img 
-                                srcset="./images/card9@2x.jpg 2x"
-                                src="./images/card9.jpg" 
-                                alt="Открытый ноутбук" width="370">
+                            <picture>
+                                <source srcset="./images/9cardmobile450.jpg, ./images/9cardmobile450@2x.jpg 2x" media="(max-width: 767px)">
+                            
+                                <source srcset="./images/9cardtablet354.jpg, ./images/9cardtablet354@2x.jpg 2x"
+                                    media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="./images/9carddesctop370.jpg, ./images/9carddesctop370@2x.jpg 2x" media="(min-width: 1199px)">
+                                <img src="./images/9carddesctop370.jpg"
+                                alt="Открытый ноутбук">
+                            </picture>
                                 </div>
                                 <div class="flat-item">
                                     <h3 class="flat-item__title">Growing Business</h3>
@@ -284,5 +389,6 @@
           </div>
     
     </footer>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
