@@ -3,13 +3,14 @@
     border-bottom: 1px solid var(--button-border);
 }
 .header__inner {
+    position: relative;
 display: flex;
 align-items: center;
 
-@media  screen and (max-width: 767px) {
+/*@media  screen and (max-width: 767px) {
     margin: 16px 0 16px 15px;
     padding: 0;
-}
+}*/
     
 }
 

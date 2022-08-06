@@ -41,7 +41,7 @@
             <a href="mailto:info@devstudio.com" class="header-contacts__link">
     
     
-    <svg class="header-contacts__icon tablet-envelope__icon" aria-hidden="true" width="16" height="12" media="(min-width: 1199px)">
+    <svg class="header-contacts__icon tablet-envelope__icon" aria-hidden="true" width="16" height="12">
       <use href="./images/symbol-defs.svg#icon-envelope"></use>
     </svg>        
           info@devstudio.com  </a> 
@@ -54,17 +54,18 @@
           +38 096 111 11 11</a> 
         </li>
       </ul>
+        <button class="header-open__menu" type="button" data-menu-open>
+          <svg class="" aria-hidden="true" width="40" height="40">
+            <use href="./images/icons/mobilemenu.svg#icon-openmobilemenu"></use>
+          </svg>
+        
+        </button>
     </div>
 
-    <button class="header-open__menu" type="button" data-menu-open> 
-      <svg class="" aria-hidden="true" width="40" height="40">
-        <use href="./images/icons/mobilemenu.svg#icon-openmobilemenu"></use>
-      </svg>
-
-       </button>
-        <div class="backdrop-mobile">
+  
+       
    <div class="header__mobile-menu mobile-menu is-open" data-menu>
-    <nav>
+   
       <button class="header-close__menu" type="button" data-menu-close> 
         <svg class="header-close__icon" aria-hidden="true" width="40" height="40">
           <use href="./images/icons/mobilemenu.svg#icon-closemobilemenu"></use>
@@ -82,17 +83,16 @@
 </ul>
 
 <ul class="mobile-menu__social">
-  <li><a href="#" class="mobile-menu__social-link">Instagram</a></li> 
-    <li><a href="#" class="mobile-menu__social-link">Twitter</a></li> 
-    <li><a href="#" class="mobile-menu__social-link">Facebook</a></li> 
+  <li><a href="#" class="mobile-menu__social-link links">Instagram</a></li> 
+    <li><a href="#" class="mobile-menu__social-link links">Twitter</a></li> 
+    <li><a href="#" class="mobile-menu__social-link links">Facebook</a></li> 
     <li><a href="#" class="mobile-menu__social-link">LinkedIn</a></li> 
-  </ul>
-
-   
-
-    </nav>
+  </ul>   
     </div>
-   </div>
+
+
+
+
                
    </header>
      <main>
@@ -438,8 +438,9 @@
             </div>
       </section>
       <section class="client-section section">
-        <h2 class="client-section__title">Постійні клієнти</h2>
+       
         <div class="container">
+          <h2 class="client-section__title">Постійні клієнти</h2>
           <ul class="client-section__list">
         
             <li class="client-section__item">

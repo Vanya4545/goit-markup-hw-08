@@ -37,12 +37,14 @@
     }
 }
 
-.flat-item  {   /*portfolio-images-flex*/
+.flat-item  {  
+    flex-grow: 1;
         padding-left: 24px;
             padding-right: 24px;
     padding-top: 20px;
     padding-bottom: 20px;
     border: 1px solid var(--portfolio-images);
+    
 }
 
 
@@ -117,10 +119,13 @@
 }
 
 
-.flat-card{ /*flat-section-card__item*/
+.flat-card { 
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: 354px;
+        display:flex;
+        flex-direction: column;
     }
 }
 
