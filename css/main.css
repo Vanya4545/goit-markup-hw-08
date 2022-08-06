@@ -438,7 +438,7 @@ address {
 
 .mobile-menu {
   position: fixed;
-  /*  max-width: 450px;*/
+  max-width: 450px;
   width: 100%;
   height: 100%;
   top: 0;
